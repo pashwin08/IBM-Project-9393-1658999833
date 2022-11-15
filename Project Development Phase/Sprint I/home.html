@@ -1,12 +1,72 @@
 <html>
-<body>
-<h1>Web phishing detection</h1>
+<style>
+  #bg
+  {
+background-image: url("img/Phishing\ \(1\).jpg");
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+filter: blur();
+
+  }
+/*body{
+background-image: linear-gradient(rgba(233, 22, 22, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/urlbg2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+.container{
+color:white;
+font-size:30px;
+text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+btn:hover {
+  background-color: #31499F;
+}
+.btn{
+background-color: #2929a3;
+border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  align:left;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+<body id="bg">
+<div class="container">
+  <br><br><br>
+<h1> Phishing  URL Detector</h1>
 <h1>Enter url</h1>
-<form action="{{ url_for('predict') }}" method="post">
+<form action="http://127.0.0.1:5000/result" method="post">
 <input type="text" name="url" required="required" />
-<button type="submit">Predict</button>
+<button type="submit" class="btn">Predict</button>
 </form>
-<br><br>
+<br>
 {{ prediction_text }}
+</div>
 </body>
 </html>
