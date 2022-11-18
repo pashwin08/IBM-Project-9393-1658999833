@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legitimate site Detector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,60 0,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                <!-- <img class="max-h-l2 w-auto" src="assets/img/Logo-NVRT-50.jpg" /> -->
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Check and Be safe from <br />Phishing Sites</h1>
+                
+               
+
+                <div class="br-8 mt-10 inline-flex">
+                    <form action="/" method ="post">
+                    <input type="text"
+                        class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"
+                        class="form__input" name ='url' id="url"
+                        placeholder="Enter URL" required="" />
+                    <button
+                        class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0" role="button">Detect</button>
+                    </form>
+                </div>
+                <div class="white opacity-20 fs-s3 mt-3">eg:https://amazon.global.com</span>
+            </div>
+            <iframe src='https://my.spline.design/untitled-81091ba6f7db7fba14e41a82633b20ca/' frameborder='0' width='100%' height='100%'></iframe></center>
+            <div class="col-md" id="form2">
+        
+              
+                <h3 id="prediction"></h3>
+             </div> 
+        </div>
+    </section>
+
+    <script>
+        
+        let x = '{{xx}}';
+        let num = x*100;
+        if (0<=x && x<0.50){
+            num = 100-num;
+        }
+        let txtx = num.toString();
+        if(x<=1 && x>=0.50){
+            var label = "Website is "+txtx +"% safe to use...";
+            document.getElementById("prediction").innerHTML = label;
+            document.getElementById("button1").style.display="block";
+        }
+        else if (0<=x && x<0.50){
+            var label = "Website is "+txtx +"% unsafe to use..."
+            document.getElementById("prediction").innerHTML = label ;
+            document.getElementById("button2").style.display="block";
+        }
+    
+</script>
+    </section>
+
+    <!-- slider -->
+    <section class="relative bg-indigo-lightest-10">
+        <div id="slider-1">
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <h2 class="white fs-l3 fw-900">About</h2>
+                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5"> measurement for phishing detection is the
+                     number of suspicious e-mails reported to 
+                    the security team. This measurement is designed to evaluate the number of employees who 
+                    followed the proper procedure for reporting suspicious messages.</p>
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <h2 class="white fs-l3 fw-900">Who are the Victims??</h2>
+                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">Those aged 25 to 44 years are most likely to be targeted, according to results from the Telephone-operated Crime Survey of England and Wales (TCSEW). Traditionally sent via email, phishing involves messages from fraudsters posing as legitimate organisations to extract personal information, or money, from the victim. </p>
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <h2 class="white fs-l3 fw-900">Why should you use this site</h2>
+                <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">GPage-Based Features are using information about pages which are calculated reputation ranking services. Some of these features give information about how much reliable a web site is.</p>
+            </div>
+        </div>
+        <ul class="absolute list-none w-100pc flex justify-between top-50pc">
+            <li><button
+                    class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i
+                        data-feather="chevron-left"></i></button></li>
+            <li><button
+                    class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i
+                        data-feather="chevron-right"></i></button></li>
+        </ul>
+    </section>
+
+    <!-- big text -->
+    <section class="p-10 md-py-10">
+        <div class="w-100pc md-w-70pc mx-auto py-10">
+            <h2 class="white fs-12 md-fs-xl1 fw-900 lh-2 ">We'll Detect the 
+                <span class="border-b bc-indigo bw-4"> Website </span> 
+                for you.</h2>
+        </div>
+    </section>
+
+    <!-- product options -->
+    <section id="team" class="min-h-100vh flex justify-start items-center">
+    <section class="py-l10">
+        <div class="flex flex-column md-flex-row md-w-80pc mx-auto">
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Leader</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Nishanth M<br><span class="opacity-30"> Reg.No:961219104035 
+                        <br><br>Loyola Institute of Technology and Science.
+                    </link></span> </div>
+                    
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Vijay Santhar M<br><span class="opacity-30"> Reg.No:961219104055<br><br>Loyola Institute of Technology and Science</link></span> </div>
+                    
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Thangaraj S<br><span class="opacity-30"> Reg.No:9612191053<br><br>Loyola Institute of Technology and Science</link></span> </div>
+                    
+                </div>
+            </div>
+
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Team Member</div>
+                    <div class="indigo-lightest fw-600 fs-m1">Ruban R<br><span class="opacity-30"> Reg.No:961219104042<br><br>Loyola Institute of Technology and Science</link></span> </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+
+    
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+        <div class="flex flex-wrap">
+            <div class="md-w-25pc mb-10">
+                <!--<img src="assets/images/logo.png" class="w-l5" alt="">-->
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                    <p>Copyright ©LSD 2022. <br>All Rights Rseserved.<br>Team ID: PNT2022TMID51354</p>
+                    
+                </div>
+            </div>
+            
+        
+    </footer>
+        <i class="w-4" data-feather="download"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--<script src="assets/js/script.js"></script>-->
+</body>
+
+</html>
